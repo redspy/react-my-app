@@ -24,4 +24,11 @@ function Test()
     );
 }
 
+// function Test0525() {
+//     return (
+//     <div>
+//         <p>그 다음날</p>
+//     </div>
+//     );
+// }
 export default Test;
