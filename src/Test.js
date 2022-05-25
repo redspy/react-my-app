@@ -2,7 +2,8 @@ function Test()
 {
     return (
     <div>
-        <p>한민수</p>
+        <p>소을이의 일기</p>
+
     </div>
     );
 }
