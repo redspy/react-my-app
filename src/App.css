@@ -1,5 +1,14 @@
+.top-div {
+  height: 100%; width:100%;
+}
+
+
 .App {
   text-align: center;
+  width: 70%;
+  
+  vertical-align: top;
+  display: inline-block;
 }
 
 .App-logo {
@@ -12,7 +21,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.App-left {
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+  vertical-align: top;
+  display: inline-block; 
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,12 +37,29 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
   color: #61dafb;
 }
-
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftThing {
+  width: 25%;
+  background-color: blue;
+}
+#content {
+  width: 70%;
+  background-color: green;
+}
+#rightThing {
+  width: 5%;
+  background-color: yellow;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

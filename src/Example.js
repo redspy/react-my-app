@@ -5,7 +5,8 @@ import Test0525 from './Test0525'
 import { BrowserRouter,
     Routes,
     Route,
-    Link } from 'react-router-dom';
+    Link } from 'react-router-dom'
+
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -50,7 +51,11 @@ export default class Example extends React.Component {
 
     render() {
         return (
+            
             <div>
+
+    
+
                 {/* <p>{this.state.text}</p> */}
                 {/* <p>
                     <button onClick={this.changeText}>버튼</button>
@@ -60,6 +65,7 @@ export default class Example extends React.Component {
                     <button onClick={this.changeDay}>날짜바꾸기</button>
                 </p> */}
                 {/* <Test0525 /> */}
+          
                 <BrowserRouter> 
                     <div style={{padding:20, border:'5px solid gray'}}>
                         <Link to="/">
@@ -95,6 +101,7 @@ export default class Example extends React.Component {
                         </Routes>
                     </div>
                 </BrowserRouter>
+              
             </div>
         );
     }
