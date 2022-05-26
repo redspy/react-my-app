@@ -51,7 +51,7 @@ export default class Example extends React.Component {
     render() {
         return (
             <div>
-                <p>{this.state.text}</p>
+                {/* <p>{this.state.text}</p> */}
                 {/* <p>
                     <button onClick={this.changeText}>버튼</button>
                     
@@ -62,17 +62,35 @@ export default class Example extends React.Component {
                 {/* <Test0525 /> */}
                 <BrowserRouter> 
                     <div style={{padding:20, border:'5px solid gray'}}>
-                        <Link to="/">홈</Link><br />
+                        <Link to="/">
+                            <button>처음으로</button>
+                        </Link><br />
                         <Link to="0520">
                             <button>5월 20일</button>
                         </Link><br/>
                         <Link to="0525">
                             <button>5월 25일</button>
                         </Link><br/>
+                        <Link to="0526">
+                            <button>5월 26일</button>
+                        </Link>
+                        
                         {/* <Link to="/rooms">방 소개</Link><br/> */}
                         <Routes>     
                             <Route exact path="0520" element={<Test></Test>}/>
                             <Route path="0525" element={<Test0525></Test0525>}/>
+                            <Route path="0526" element={
+                                <div>            
+                                    <p>5월 26일 오늘의 일기</p>
+                                    <br></br>
+                                    <img src={require('./resource/0526/20220526_091047.jpg')} width="530" height="400" />
+                                    <div> 소을이일기 소을이패션쑈 </div>
+                                    <img src={require('./resource/0526/img_20220526162847601.jpg')} width="530" height="600" />
+                                    <div> 어린이집이 참 재밌어요 </div>    
+                                    <img src={require('./resource/0526/20220522_182424.jpg')} width="530" height="400" />
+                                    <div> 미끄럼틀타고 슝 </div>                         
+                                </div>
+                            }></Route>
                             {/* <Route path="/rooms" component={Rooms}/> */}    
                         </Routes>
                     </div>
