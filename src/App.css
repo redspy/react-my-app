@@ -5,7 +5,7 @@
 
 .App {
     text-align: center;
-    width: 70%;
+    width: 100%;
 
     vertical-align: top;
     display: inline-block;
@@ -22,7 +22,7 @@
     }
 }
 .App-left {
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
     background-color: aqua;
     vertical-align: top;
@@ -30,8 +30,8 @@
 }
 .App-header {
     background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
+    /* min-height: 100vh;  */
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -53,8 +53,8 @@
     background-color: blue;
 }
 #content {
-    width: 70%;
-    background-color: green;
+    width: 100%;
+    background-color: pink;
 }
 #rightThing {
     width: 5%;
@@ -67,4 +67,26 @@
     to {
         transform: rotate(360deg);
     }
+}
+.dateButton {
+    width: 200px;
+    height: 60px;
+    color: pink;
+    background-color: black;
+}
+.imageStyle {
+    width: 90%;
+    height: 90%;
+}
+.contentStyle {
+    font-family:Arial, Helvetica, sans-serif;
+    color:brown;
+    font-size: large;
+}
+.contentBorder {
+    padding: 5px;
+    border-width: 5px;
+    border-radius: 4;
+    border-color: blueviolet;
+    border-style: dotted;
 }

@@ -1,9 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Test from './Test'
-import Test0525 from './Test0525'
 import Example from './Example';
-import {ProSidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css'
 import {
     FaTachometerAlt,
@@ -22,7 +18,7 @@ function App() {
         // </Menu>     </ProSidebar>   </div> <div className="App"> <header
         // className="App-header">     <Example></Example>   </header> </div> </div>
         <div id="container">
-
+{/* 
             <div id="leftThing">
                 <ProSidebar>
                     <Menu iconShape="square">
@@ -33,19 +29,19 @@ function App() {
                         </SubMenu>
                     </Menu>
                 </ProSidebar>
-            </div>
+            </div> */}
 
             <div id="content">
                 <div className="App">
-                    <header className="App-header">
+                    <header >
                         <Example></Example>
                     </header>
                 </div>
             </div>
 
-            <div id="rightThing">
+            {/* <div id="rightThing">
                 Right Side Menu
-            </div>
+            </div> */}
 
         </div>
     );
