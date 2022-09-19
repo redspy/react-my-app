@@ -28,22 +28,26 @@ function App() {
                 <div className="App">
 
                     <div class="myHeader">
-                        <div style={{
-                            width:80,
-                        }}>
-                            <a href="/">
-                            <FaHome style={{
-                                width: 30,
-                                height: 30,
-                                padding: 15,
-                                paddingLeft: 30,
-                                color: 'white',
-                            }} />
-                            </a>
-                        </div>
+                   
                         <div class="titleText">
                             <p>소을이의 일기</p>
-                        </div>
+                        </div>   
+                         
+                            <div style={{
+                                width:80,
+                                position: 'relative',
+                            }}>
+                                <a href="/"> 
+                                <FaHome style={{
+                                    width: 30,
+                                    height: 30,
+                                    padding: 15,
+                                    paddingLeft: 30,
+                                    color: 'white',
+                                }} />
+                                </a> 
+                            </div>
+                                   
 
                     </div>
 

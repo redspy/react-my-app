@@ -82,8 +82,10 @@
     font-family:Arial, Helvetica, sans-serif;
     color:brown;
     font-size: large;
+    padding-top: 10px;  
 }
 .contentBorder {
+
     margin: 5px;
     padding: 5px;
     border-width: 1.5px;
@@ -96,7 +98,7 @@
     border-bottom-color: black;
     border-right-color: black;
     border-style: solid;
-    
+  
 }
 
 .myHeader {
@@ -106,6 +108,7 @@
     color: white;
     vertical-align: top;
     display:flex;
+    width:100%;
     /* flex-direction: row;     */
 }
 
@@ -119,6 +122,7 @@
 }
 
 .titleText {
+    position: absolute;
     width: 100%;
     align-content: center;
     text-align: center;
