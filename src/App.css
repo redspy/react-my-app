@@ -30,8 +30,8 @@
 }
 .App-header {
     background-color: #282c34;
-    /* min-height: 100vh;  */
-    /* display: flex; */
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -84,9 +84,43 @@
     font-size: large;
 }
 .contentBorder {
+    margin: 5px;
     padding: 5px;
-    border-width: 5px;
-    border-radius: 4;
-    border-color: blueviolet;
-    border-style: dotted;
+    border-width: 1.5px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-radius: 3%;
+    border-color: gray;
+    border-top-color: gray;
+    border-left-color: gray;
+    border-bottom-color: black;
+    border-right-color: black;
+    border-style: solid;
+    
+}
+
+.myHeader {
+    height: 60px;
+    background-color : black;
+    text-align: left;
+    color: white;
+    vertical-align: top;
+    display:flex;
+    /* flex-direction: row;     */
+}
+
+.bodyRouter {
+    text-align: center;
+}
+
+.leftIcon {
+    background-color: red;
+    
+}
+
+.titleText {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+
 }

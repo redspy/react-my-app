@@ -2,6 +2,7 @@ import './App.css';
 import Example from './Example';
 import 'react-pro-sidebar/dist/css/styles.css'
 import {
+    FaHome,
     FaTachometerAlt,
     FaGem,
     FaList,
@@ -9,40 +10,58 @@ import {
     FaRegLaughWink,
     FaHeart
 } from "react-icons/fa";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Test from './Test'
+import Home from './Home'
+import Test0525 from './Test0525'
+import Test0917 from './Test0917'
+import Test0919 from './Test0919'
+
+function getTitle() {
+    return this.Test0917.getTitle();
+}
 function App() {
     return (
-        // <div className="top-div">   <div className="App-left">     <ProSidebar> <Menu
-        // iconShape="square">         <MenuItem icon={<FaGem />} >Dashboard</MenuItem>
-        // <SubMenu title="Components" icon={<FaHeart />}> <MenuItem>Component
-        // 1</MenuItem>             <MenuItem>Component 2</MenuItem> </SubMenu>
-        // </Menu>     </ProSidebar>   </div> <div className="App"> <header
-        // className="App-header">     <Example></Example>   </header> </div> </div>
         <div id="container">
-{/* 
-            <div id="leftThing">
-                <ProSidebar>
-                    <Menu iconShape="square">
-                        <MenuItem icon={<FaGem />}>Dashboard</MenuItem>
-                        <SubMenu title="Components" icon={<FaHeart />}>
-                            <MenuItem>Component 1</MenuItem>
-                            <MenuItem>Component 2</MenuItem>
-                        </SubMenu>
-                    </Menu>
-                </ProSidebar>
-            </div> */}
-
             <div id="content">
+
                 <div className="App">
-                    <header >
-                        <Example></Example>
-                    </header>
+
+                    <div class="myHeader">
+                        <div style={{
+                            width:80,
+                        }}>
+                            <a href="/">
+                            <FaHome style={{
+                                width: 30,
+                                height: 30,
+                                padding: 15,
+                                paddingLeft: 30,
+                                color: 'white',
+                            }} />
+                            </a>
+                        </div>
+                        <div class="titleText">
+                            <p>소을이의 일기</p>
+                        </div>
+
+                    </div>
+
+                    <body>
+                        <div>
+                            <BrowserRouter>
+                                <Routes>
+                                    <Route path="/" element={<Home></Home>}></Route>
+                                    <Route path="0525" element={<Test0525></Test0525>}></Route>
+                                    <Route path="0917" element={<Test0917></Test0917>}></Route>
+                                    <Route path="0919" element={<Test0919></Test0919>}></Route>
+                                </Routes>
+                            </BrowserRouter>
+                            <Example></Example>
+                        </div>
+                    </body>
                 </div>
             </div>
-
-            {/* <div id="rightThing">
-                Right Side Menu
-            </div> */}
-
         </div>
     );
 }
