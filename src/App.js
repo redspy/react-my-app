@@ -16,22 +16,7 @@ import dailyData from "./DiaryDefine.js"
 import OnePageTest from './OnePageTest';
 
 function App() {
-    var data = {
-        dateRouteList: [
-            '0525',
-            '0526',
-            '0917',
-            '0919',
-            '0920',
-        ],
-        titleList: [
-            '5월 25일',
-            '5월 26일',
-            '9월 17일',
-            '9월 19일',
-            '9월 20일',
-        ]
-    }
+    var routelist = Object.keys(dailyData);
 
     return (
         <div className="App">
@@ -59,9 +44,8 @@ function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<Home></Home>}></Route>
-                            {
-                                
-                                data.dateRouteList.map((routeString, index) =>{
+                            {                                
+                                routelist.map((routeString, index) =>{
                                     return (
                                         <Route path={routeString} element={<Diary title={dailyData[routeString].title} image={dailyData[routeString].imageData} description={dailyData[routeString].description}></Diary>}></Route>
                                     );
