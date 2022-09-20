@@ -26,15 +26,11 @@ function App() {
     return (
         <div id="container">
             <div id="content">
-
                 <div className="App">
-
                     <div class="myHeader">
-                   
                         <div class="titleText">
                             <p>소을이의 일기</p>
                         </div>   
-                         
                             <div style={{
                                 width:80,
                                 position: 'relative',
@@ -49,10 +45,7 @@ function App() {
                                 }} />
                                 </a> 
                             </div>
-                                   
-
                     </div>
-
                     <body>
                         <div>
                             <BrowserRouter>
@@ -62,10 +55,10 @@ function App() {
                                     <Route path="0917" element={<Test0917></Test0917>}></Route>
                                     <Route path="0919" element={<Test0919></Test0919>}></Route>
                                     <Route path="0920" element={<Test0920 title="9월20일!!"></Test0920>}></Route>
+                                    <Route path="0920a" element={<Test0920 title="하나더 생성하기"></Test0920>}></Route>
                                     <Route path="0" element={<OnePageTest></OnePageTest>}></Route>
                                 </Routes>
                             </BrowserRouter>
-                            <Example></Example>
                         </div>
                     </body>
                 </div>
