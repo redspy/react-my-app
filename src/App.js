@@ -16,6 +16,7 @@ import Home from './Home'
 import Test0525 from './Test0525'
 import Test0917 from './Test0917'
 import Test0919 from './Test0919'
+import Test0920 from './Test0920'
 import OnePageTest from './OnePageTest';
 
 function getTitle() {
@@ -60,6 +61,7 @@ function App() {
                                     <Route path="0525" element={<Test0525></Test0525>}></Route>
                                     <Route path="0917" element={<Test0917></Test0917>}></Route>
                                     <Route path="0919" element={<Test0919></Test0919>}></Route>
+                                    <Route path="0920" element={<Test0920></Test0920>}></Route>
                                     <Route path="0" element={<OnePageTest></OnePageTest>}></Route>
                                 </Routes>
                             </BrowserRouter>

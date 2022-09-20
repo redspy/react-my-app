@@ -15,6 +15,9 @@ export default class Home extends React.Component {
                         <Link to="0919">
                             <button class="dateSelectButton">9월 19일</button>
                         </Link>
+                        <Link to="0920">
+                            <button class="dateSelectButton">9월 20일</button>
+                        </Link>
                     </div>
             </div>
         );
