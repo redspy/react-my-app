@@ -2,7 +2,6 @@ import React from "react";
 
 export default class Test0919 extends React.Component {
 
-
     title() {
         return "9월 19일 오늘의 일기";
     }
