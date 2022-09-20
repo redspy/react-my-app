@@ -16,11 +16,6 @@ export default class Test0920 extends React.Component {
         );
     }
 
-
-    title() {
-        return "9월 20일 오늘의 일기";
-    }
-
     render() {
         const data = {
             description: [
@@ -41,7 +36,7 @@ export default class Test0920 extends React.Component {
 
         return (
             <div>
-                <div class="titleStyle">{this.title()}</div>
+                <div class="titleStyle">{this.props.title}</div>
                 <div>
                     {
                         data.imageData.map((path, index) => {

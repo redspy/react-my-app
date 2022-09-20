@@ -61,7 +61,7 @@ function App() {
                                     <Route path="0525" element={<Test0525></Test0525>}></Route>
                                     <Route path="0917" element={<Test0917></Test0917>}></Route>
                                     <Route path="0919" element={<Test0919></Test0919>}></Route>
-                                    <Route path="0920" element={<Test0920></Test0920>}></Route>
+                                    <Route path="0920" element={<Test0920 title="9월20일!!"></Test0920>}></Route>
                                     <Route path="0" element={<OnePageTest></OnePageTest>}></Route>
                                 </Routes>
                             </BrowserRouter>
