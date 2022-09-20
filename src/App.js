@@ -22,7 +22,7 @@ function App() {
         <div className="App">
             <div class="myHeader">
                 <div class="titleText">
-                    <p>소을이의 일기</p>
+                    <p>소을이♥다을이의 일기</p>
                 </div>   
                     <div style={{
                         width:80,
