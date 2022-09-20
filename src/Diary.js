@@ -1,6 +1,7 @@
 import React from "react";
 
-export default class Test0920 extends React.Component {
+
+export default class Diary extends React.Component {
     render() {
         return (
             <div>

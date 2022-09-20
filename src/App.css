@@ -9,6 +9,8 @@
 
     vertical-align: top;
     display: inline-block;
+
+    background-color: pink;
 }
 
 .App-logo {
