@@ -18,6 +18,15 @@ import OnePageTest from './OnePageTest';
 function App() {
     var routelist = Object.keys(dailyData);
 
+    var titleList = {};
+
+    var i = 0;
+    for(var key in dailyData)
+    {
+        titleList[i] = dailyData[key].title;
+        i++;
+    }
+
     return (
         <div className="App">
             <div class="myHeader">
@@ -43,7 +52,7 @@ function App() {
                 <div>
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/" element={<Home></Home>}></Route>
+                            <Route path="/" element={<Home data={dailyData}></Home>}></Route>
                             {                                
                                 routelist.map((routeString, index) =>{
                                     return (
