@@ -19,12 +19,14 @@ function App() {
     var data = {
         dateRouteList: [
             '0525',
+            '0526',
             '0917',
             '0919',
             '0920',
         ],
         titleList: [
             '5월 25일',
+            '5월 26일',
             '9월 17일',
             '9월 19일',
             '9월 20일',
@@ -58,18 +60,13 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home></Home>}></Route>
                             {
+                                
                                 data.dateRouteList.map((routeString, index) =>{
                                     return (
-                                        <Route path={routeString} element={<Diary title={data.titleList[index]} image={dailyData._0920.imageData} description={dailyData._0920.description}></Diary>}></Route>
+                                        <Route path={routeString} element={<Diary title={dailyData[routeString].title} image={dailyData[routeString].imageData} description={dailyData[routeString].description}></Diary>}></Route>
                                     );
                                 })
                             }
-                            
-{/*                             <Route path={data.dateRouteList[0]} element={<Test0525></Test0525>}></Route>
-                            <Route path="0917" element={<Test0917></Test0917>}></Route>
-                            <Route path="0919" element={<Test0919></Test0919>}></Route>
-                            <Route path="0920" element={<Test0920 title="9월20일!!"></Test0920>}></Route>
-*/}                            
                             <Route path="0" element={<OnePageTest></OnePageTest>}></Route> 
                         </Routes>
                     </BrowserRouter>
