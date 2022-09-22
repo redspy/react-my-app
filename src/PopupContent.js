@@ -11,7 +11,7 @@ class PopupContent extends Component {
                             <img className="popupImageStyle" src={this.props.src} onClick={this.onClose} />
                         </div>
                     </div>
-                    
+                    <div className="popupAllPage"></div>
                 </div>
 
 

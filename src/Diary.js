@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PopupDom from './PopupDom';
 import PopupContent from './PopupContent';
 
@@ -36,7 +36,7 @@ export default class Diary extends React.Component {
     closePopup(){
         this.setState({
             isOpenPopup: false,
-        })
+        })      
     }
 
     render() {
