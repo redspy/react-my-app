@@ -90,6 +90,26 @@ const dailyData = {
             require('./resource/0920/20220920_173014.jpg'),
             require('./resource/0920/20220920_173021.jpg'),
         ]
+    },
+
+    ["0922"] : {
+        title: "9월 22일",
+        description: [
+            /* 1번 */'딩댕딩댕 실로폰처요.4563390',
+            /* 2번 */'슝슝목마타기재밌어요.',
+            /* 3번 */'그네타기도 재밌어요',
+            /* 4번 */'빙글빙긇 ',
+            /* 5번 */' ',
+            /* 6번 */' ',
+        ],
+        imageData: [
+            require('./resource/0921/img_20220921172148799.jpg'),
+            require('./resource/0921/img_20220920174954561.jpg'),
+            require('./resource/0921/20220921_174248.jpg'),
+            require('./resource/0921/20220921_172611.jpg'),
+            require('./resource/0921/20220921_124819.jpg'),
+            require('./resource/0921/20220921_100808.jpg'),
+        ]
     }
     
 };
