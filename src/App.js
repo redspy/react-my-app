@@ -16,6 +16,7 @@ import dailyData from "./DiaryDefine.js"
 import OnePageTest from './OnePageTest';
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player/lazy';
+import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 function App() {
     var routelist = Object.keys(dailyData);
 
@@ -44,26 +45,9 @@ function App() {
                         position: 'relative',
                     }}>
                         <a href="/"> 
-                        <FaHome style={{
-                            width: 30,
-                            height: 30,
-                            padding: 15,
-                            paddingLeft: 30,
-                            color: 'white',
-                            display: 'flex',
-                            position: 'absolute',
-                        }} />
+                            <FaHome className='faHomeStyle' />
                         </a> 
-                        <FaCameraRetro 
-                        style={{
-                            width: 30,
-                            height: 30,
-                            padding: 15,
-                            paddingLeft: 100,
-                            color: 'white',
-                            display: 'flex',
-                            position: 'absolute',
-                        }} />
+                        <FaCameraRetro className='faCameraStyle' />
                         
                     </div>
 

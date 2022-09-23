@@ -221,3 +221,23 @@
     left:0;
     z-index:5;
 }
+
+.faHomeStyle {    
+    font-size: 30px;
+    align-content: center;
+    height: 100%;
+    margin-left: 10px;    
+    color: white;
+    display: flex;
+    position: absolute;
+}
+
+.faCameraStyle {
+    font-size: 30px;
+    align-content: center;
+    height: 100%;
+    margin-left: 60px;    
+    color: white;
+    display: flex;
+    position: absolute;
+}
