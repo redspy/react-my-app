@@ -2,7 +2,7 @@ import './App.css';
 import 'react-pro-sidebar/dist/css/styles.css'
 import {
     FaHome,
-    FaTachometerAlt,
+    FaCameraRetro,
     FaGem,
     FaList,
     FaGithub,
@@ -14,7 +14,8 @@ import Home from './Home'
 import Diary from './Diary'
 import dailyData from "./DiaryDefine.js"
 import OnePageTest from './OnePageTest';
-
+import React, {useState} from 'react';
+import ReactPlayer from 'react-player/lazy';
 function App() {
     var routelist = Object.keys(dailyData);
 
@@ -26,7 +27,12 @@ function App() {
         titleList[i] = dailyData[key].title;
         i++;
     }
+    const [videoFilePath, setVideoFilePath] = useState(null);
 
+
+    const handleVideoUpload = (event) => {
+        setVideoFilePath(URL.createObjectURL(event.target.files[0]));
+    };
     return (
         <div className="App">
             <div class="myHeader">
@@ -44,12 +50,30 @@ function App() {
                             padding: 15,
                             paddingLeft: 30,
                             color: 'white',
+                            display: 'flex',
+                            position: 'absolute',
                         }} />
                         </a> 
+                        <FaCameraRetro 
+                        style={{
+                            width: 30,
+                            height: 30,
+                            padding: 15,
+                            paddingLeft: 100,
+                            color: 'white',
+                            display: 'flex',
+                            position: 'absolute',
+                        }} />
+                        
                     </div>
+
             </div>
             <body>
                 <div>
+{/*                     <div className='player-wrapper'>
+                    <input type="file" onChange={handleVideoUpload} />
+                    <ReactPlayer url={videoFilePath} width="300" height="500" controls={true} />
+                    </div> */}
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<Home data={dailyData}></Home>}></Route>
