@@ -110,6 +110,26 @@ const dailyData = {
             require('./resource/0921/20220921_124819.jpg'),
             require('./resource/0921/20220921_100808.jpg'),
         ]
+    },
+    
+    ["0926"] : {
+        title: "9월 26일",
+        description: [
+            /* 1번 */'',
+            /* 2번 */'',
+            /* 3번 */'',
+            /* 4번 */'',
+            /* 5번 */'',
+            /* 6번 */'',
+        ],
+        imageData: [
+            require('./resource/0921/img_20220921172148799.jpg'),
+            require('./resource/0921/img_20220920174954561.jpg'),
+            require('./resource/0921/20220921_174248.jpg'),
+            require('./resource/0921/20220921_172611.jpg'),
+            require('./resource/0921/20220921_124819.jpg'),
+            require('./resource/0921/20220921_100808.jpg'),
+        ]
     }
     
 };

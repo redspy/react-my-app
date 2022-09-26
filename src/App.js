@@ -15,8 +15,8 @@ import Diary from './Diary'
 import dailyData from "./DiaryDefine.js"
 import OnePageTest from './OnePageTest';
 import React, {useState} from 'react';
-import ReactPlayer from 'react-player/lazy';
-import { calculateNewValue } from '@testing-library/user-event/dist/utils';
+import CameraPage from './CameraPage.js'
+
 function App() {
     var routelist = Object.keys(dailyData);
 
@@ -47,8 +47,10 @@ function App() {
                         <a href="/"> 
                             <FaHome className='faHomeStyle' />
                         </a> 
-                        <FaCameraRetro className='faCameraStyle' />
                         
+                        <a href="camera"> 
+                            <FaCameraRetro className='faCameraStyle' />
+                        </a>
                     </div>
 
             </div>
@@ -69,6 +71,7 @@ function App() {
                                 })
                             }
                             <Route path="0" element={<OnePageTest></OnePageTest>}></Route> 
+                            <Route path="camera" element={<CameraPage></CameraPage>}></Route> 
                         </Routes>
                     </BrowserRouter>
                 </div>

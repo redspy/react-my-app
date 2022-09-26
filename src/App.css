@@ -241,3 +241,13 @@
     display: flex;
     position: absolute;
 }
+
+.webcamStyle {
+    /* background-color: yellowgreen; */
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    z-index: 0;
+    left:0;
+    top:0;
+}
