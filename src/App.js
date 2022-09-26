@@ -14,7 +14,7 @@ import Home from './Home'
 import Diary from './Diary'
 import dailyData from "./DiaryDefine.js"
 import OnePageTest from './OnePageTest';
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import CameraPage from './CameraPage.js'
 
 function App() {
@@ -31,9 +31,17 @@ function App() {
     const [videoFilePath, setVideoFilePath] = useState(null);
 
 
+    const webcamCallback = () => {
+
+    }
+
     const handleVideoUpload = (event) => {
         setVideoFilePath(URL.createObjectURL(event.target.files[0]));
     };
+
+
+    
+
     return (
         <div className="App">
             <div class="myHeader">
