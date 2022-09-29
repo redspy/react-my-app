@@ -39,6 +39,29 @@ export default class Diary extends React.Component {
         })      
     }
 
+    showImage(path) {
+        return (
+            <img className="imageStyle" src={path} onClick={() => this.openPopup(path)}/>
+        )
+    }
+    showVideo(path) {
+        return (
+            <video className="imageStyle"
+                    src="{path}"
+                    controls="controls"
+                    autoplay="autoplay"
+                    loop="loop">
+
+            </video>
+        )
+    }
+
+
+    findVideo(path) {
+        path.includes('mp4');
+    }
+
+
     render() {
         return (
             <div>
@@ -50,12 +73,18 @@ export default class Diary extends React.Component {
                             return (
                                 <div className="contentBorder">
                                     <div id="popupDom">
-                                        <img className="imageStyle" src={path} onClick={() => this.openPopup(path)}/>
+                                        
+                                    {/* <img className="imageStyle" src={path} onClick={() => this.openPopup(path)}/> */}
+                                        {
+                                            path.includes('mp4') === true
+                                            ? this.showVideo(path)
+                                            : this.showImage(path)
+                                        }    
                                         {
                                             this.state.isOpenPopup &&
                                             <PopupDom>
                                                 <PopupContent onClose={this.closePopup} src={this.state.popURL}/>
-                                            </PopupDom>
+                                            </PopupDom>                                            
                                         } 
                                         
                                     </div>

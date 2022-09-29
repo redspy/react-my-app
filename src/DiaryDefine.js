@@ -8,10 +8,10 @@ const dailyData = {
             /* 4번 */'그리고 엄마랑 소을이가 자는 모습',
         ],
         imageData: [
-            require('./resource/20220523_091053.jpg'),
-            require('./resource/20220522_171022.jpg'),
-            require('./resource/img_20220513162100239.jpg'),
-            require('./resource/20220514_002551.jpg'),
+            'images/20220523_091053.jpg',
+            'images/20220522_171022.jpg',
+            'images/img_20220513162100239.jpg',
+            'images/20220514_002551.jpg',
         ]
     },
     ["0525"] : {
@@ -22,9 +22,9 @@ const dailyData = {
             /* 3번 */'모두 다 식사시간',
         ],
         imageData: [
-            require('./resource/0525/20220525_090930.jpg'),
-            require('./resource/0525/20220525_170452.jpg'),
-            require('./resource/0525/20220525_193301.jpg'),
+            'images/0525/20220525_090930.jpg',
+            'images/0525/20220525_170452.jpg',
+            'images/0525/20220525_193301.jpg',
         ]
     },
 
@@ -36,9 +36,9 @@ const dailyData = {
             /* 3번 */'미끄럼틀타고 슝',
         ],
         imageData: [
-            require('./resource/0526/20220526_091047.jpg'),
-            require('./resource/0526/img_20220526162847601.jpg'),
-            require('./resource/0526/20220522_182424.jpg'),
+            'images/0526/20220526_091047.jpg',
+            'images/0526/img_20220526162847601.jpg',
+            'images/0526/20220522_182424.jpg',
         ]
     },
 
@@ -51,10 +51,10 @@ const dailyData = {
             /* 4번 */'정글숲을 지나모가나올까',
         ],
         imageData: [
-            require('./resource/0917/20220917_153501.jpg'),
-            require('./resource/0917/20220917_153611.jpg'),
-            require('./resource/0917/20220917_154011.jpg'),
-            require('./resource/0917/20220917_154023.jpg'),
+            'images/0917/20220917_153501.jpg',
+            'images/0917/20220917_153611.jpg',
+            'images/0917/20220917_154011.jpg',
+            'images/0917/20220917_154023.jpg',
         ]
     },
     
@@ -67,10 +67,10 @@ const dailyData = {
             '풍년일쌔 랄랄라 전통놀이해요',
         ],
         imageData: [
-            require('./resource/0919/20220918_161057.jpg'),
-            require('./resource/0919/20220918_154804.jpg'),
-            require('./resource/0919/20220918_163740.jpg'),
-            require('./resource/0919/img_20220919171623497.jpg'),
+            'images/0919/20220918_161057.jpg',
+            'images/0919/20220918_154804.jpg',
+            'images/0919/20220918_163740.jpg',
+            'images/0919/img_20220919171623497.jpg',
         ]
     },
 
@@ -84,11 +84,11 @@ const dailyData = {
             /* 5번 */'소을셀카',
         ],
         imageData: [
-            require('./resource/0920/20220920_093228.jpg'),
-            require('./resource/0920/img_20220920174954510.jpg'),
-            require('./resource/0920/20220920_172326.jpg'),
-            require('./resource/0920/20220920_173014.jpg'),
-            require('./resource/0920/20220920_173021.jpg'),
+            'images/0920/20220920_093228.jpg',
+            'images/0920/img_20220920174954510.jpg',
+            'images/0920/20220920_172326.jpg',
+            'images/0920/20220920_173014.jpg',
+            'images/0920/20220920_173021.jpg',
         ]
     },
 
@@ -103,12 +103,12 @@ const dailyData = {
             /* 6번 */'치카치카 양치질잘해요',
         ],
         imageData: [
-            require('./resource/0921/img_20220921172148799.jpg'),
-            require('./resource/0921/img_20220920174954561.jpg'),
-            require('./resource/0921/20220921_174248.jpg'),
-            require('./resource/0921/20220921_172611.jpg'),
-            require('./resource/0921/20220921_124819.jpg'),
-            require('./resource/0921/20220921_100808.jpg'),
+            'images/0921/img_20220921172148799.jpg',
+            'images/0921/img_20220920174954561.jpg',
+            'images/0921/20220921_174248.jpg',
+            'images/0921/20220921_172611.jpg',
+            'images/0921/20220921_124819.jpg',
+            'images/0921/20220921_100808.jpg',
         ]
     },
     
@@ -123,12 +123,12 @@ const dailyData = {
             /* 6번 */'',
         ],
         imageData: [
-            require('./resource/0921/img_20220921172148799.jpg'),
-            require('./resource/0921/img_20220920174954561.jpg'),
-            require('./resource/0921/20220921_174248.jpg'),
-            require('./resource/0921/20220921_172611.jpg'),
-            require('./resource/0921/20220921_124819.jpg'),
-            require('./resource/0921/20220921_100808.jpg'),
+            'videos/20220921_174259.mp4',
+            'images/0921/img_20220920174954561.jpg',
+            'images/0921/20220921_174248.jpg',
+            'images/0921/20220921_172611.jpg',
+            'images/0921/20220921_124819.jpg',
+            'images/0921/20220921_100808.jpg',
         ]
     }
     
