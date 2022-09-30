@@ -47,15 +47,15 @@ export default class Diary extends React.Component {
     showVideo(path) {
         return (
             <video className="imageStyle"
-                    src="{path}"
+                    src={path}
                     controls="controls"
                     autoplay="autoplay"
-                    loop="loop">
+                    loop="loop"
+                    mute>
 
             </video>
         )
     }
-
 
     findVideo(path) {
         path.includes('mp4');
@@ -68,13 +68,10 @@ export default class Diary extends React.Component {
                 <div class="titleStyle">{this.props.title}</div>
                 <div>
                     {
-
                         this.props.image.map((path, index) => {
                             return (
                                 <div className="contentBorder">
                                     <div id="popupDom">
-                                        
-                                    {/* <img className="imageStyle" src={path} onClick={() => this.openPopup(path)}/> */}
                                         {
                                             path.includes('mp4') === true
                                             ? this.showVideo(path)
@@ -85,8 +82,7 @@ export default class Diary extends React.Component {
                                             <PopupDom>
                                                 <PopupContent onClose={this.closePopup} src={this.state.popURL}/>
                                             </PopupDom>                                            
-                                        } 
-                                        
+                                        }                                         
                                     </div>
                                     <div className="contentStyle">
                                         {this.props.description[index]}
