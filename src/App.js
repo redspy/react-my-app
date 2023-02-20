@@ -16,6 +16,8 @@ import dailyData from "./DiaryDefine.js"
 import OnePageTest from './OnePageTest';
 import React, {useState, useEffect, useRef} from 'react';
 import CameraPage from './CameraPage.js'
+import FlyPhonics_3_1 from './FlyPhonics_3_1.js'
+import FlyPhonics_3_2 from './FlyPhonics_3_2.js'
 
 function App() {
     var routelist = Object.keys(dailyData);
@@ -64,10 +66,15 @@ function App() {
             </div>
             <body>
                 <div>
-{/*                     <div className='player-wrapper'>
-                    <input type="file" onChange={handleVideoUpload} />
-                    <ReactPlayer url={videoFilePath} width="300" height="500" controls={true} />
-                    </div> */}
+                    <p>English Tree</p>
+                    <a href="FlyPhonics_3_1">
+                        <button class="dateSelectButton">3-1</button>
+                    </a>
+                    <a href="FlyPhonics_3_2">
+                        <button class="dateSelectButton">3-2</button>
+                    </a>
+                </div>
+                <div>
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<Home data={dailyData}></Home>}></Route>
@@ -80,6 +87,8 @@ function App() {
                             }
                             <Route path="0" element={<OnePageTest></OnePageTest>}></Route> 
                             <Route path="camera" element={<CameraPage></CameraPage>}></Route> 
+                            <Route path="FlyPhonics_3_1" element={<FlyPhonics_3_1></FlyPhonics_3_1>}></Route>
+                            <Route path="FlyPhonics_3_2" element={<FlyPhonics_3_2></FlyPhonics_3_2>}></Route>
                         </Routes>
                     </BrowserRouter>
                 </div>
