@@ -19,7 +19,7 @@ export default class FlyPhonics_3_2 extends React.Component {
             playerArray.push(
                 <div>
                     <p>{i}</p>            
-                    <ReactAudioPlayer
+                    <audio class="audioStyle"
                         src={source}
                         controls
                     />

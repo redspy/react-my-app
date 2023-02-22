@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-
+import ReactPlayer from 'react-player';
+import './App.css';
 
 export default class FlyPhonics_3_1 extends React.Component {
     
@@ -19,12 +20,13 @@ export default class FlyPhonics_3_1 extends React.Component {
             
             playerArray.push(
                 <div>
-                    <p>{i}</p>            
-                    <ReactAudioPlayer
+                    <p>{i}</p>         
+                    <audio class="audioStyle"
                         src={source}
                         controls
                     />
                 </div>
+
             )
         }
         return playerArray;
