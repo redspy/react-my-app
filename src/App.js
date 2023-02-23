@@ -18,6 +18,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import CameraPage from './CameraPage.js'
 import FlyPhonics_3_1 from './FlyPhonics_3_1.js'
 import FlyPhonics_3_2 from './FlyPhonics_3_2.js'
+import JukjunES from './JukjunES.js'
 
 function App() {
     var routelist = Object.keys(dailyData);
@@ -89,6 +90,7 @@ function App() {
                             <Route path="camera" element={<CameraPage></CameraPage>}></Route> 
                             <Route path="FlyPhonics_3_1" element={<FlyPhonics_3_1></FlyPhonics_3_1>}></Route>
                             <Route path="FlyPhonics_3_2" element={<FlyPhonics_3_2></FlyPhonics_3_2>}></Route>
+                            <Route path="jukjun" element={<JukjunES></JukjunES>}></Route>
                         </Routes>
                     </BrowserRouter>
                 </div>
