@@ -3,6 +3,7 @@ import 'react-pro-sidebar/dist/css/styles.css'
 import {
     FaHome,
     FaCameraRetro,
+    FaMusic,
     FaGem,
     FaList,
     FaGithub,
@@ -61,6 +62,10 @@ function App() {
                         
                         <a href="camera"> 
                             <FaCameraRetro className='faCameraStyle' />
+                        </a>
+
+                        <a href="">
+                            <FaMusic className='faMusicStyle'/>
                         </a>
                     </div>
 

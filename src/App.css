@@ -242,6 +242,17 @@
     position: absolute;
 }
 
+.faMusicStyle {
+    font-size: 30px;
+    align-content: right;
+
+    height: 100%;
+    margin-left: 110px;    
+    color: white;
+    display: flex;
+    position: relative;
+}
+
 .webcamStyle {
     /* background-color: yellowgreen; */
     width: 100%;
